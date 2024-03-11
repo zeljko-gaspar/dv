@@ -1,0 +1,442 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "title": "JavaScript vežbe 1",
+            "teacher": "Nikola Dotlić",
+            "image": "images/courses-img-01.jpeg",
+            "category": "vežbe i zadaci",
+            "description": "20 js mini vezbi",
+            "lessons": [
+                {
+                    "id": 1,
+                    "title": "Uvod",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 2,
+                    "title": "Background slider",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 3,
+                    "title": "Expanding Cards",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 4,
+                    "title": "Stopwatch",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 5,
+                    "title": "Autotext",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 6,
+                    "title": "KeyCode",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 7,
+                    "title": "Text counter",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 8,
+                    "title": "Choose tabs",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 9,
+                    "title": "Image feed",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 10,
+                    "title": "Quiz app",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 11,
+                    "title": "Switcher",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 12,
+                    "title": "DragAndDrop",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 13,
+                    "title": "Search widget",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 14,
+                    "title": "Carousel",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 15,
+                    "title": "FAQ",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 16,
+                    "title": "Verify account",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 17,
+                    "title": "Social counter",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 18,
+                    "title": "Scroll animation",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 19,
+                    "title": "Sticky navbar",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 20,
+                    "title": "Name number",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 21,
+                    "title": "NewYear counter",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 22,
+                    "title": "Video galerija",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 23,
+                    "title": "Mobil Tab",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 24,
+                    "title": "Notes",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 25,
+                    "title": "Image protection",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 26,
+                    "title": "Rent-A-Car",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "PHP Semestar 1",
+            "teacher": "Danilo Vešovic",
+            "image": "images/courses-img-02.jpeg",
+            "category": "Master PHP",
+            "description": "Početak backend programiranja - osnove PHP jezika.",
+            "lessons": [
+                {
+                    "id": 1,
+                    "title": "Uvod u PHP",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 2,
+                    "title": "Instalacija php-a",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 3,
+                    "title": "PHP - tagovi",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 4,
+                    "title": "php - varijable",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 5,
+                    "title": "Php - string",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 6,
+                    "title": "Prosti tipovi podataka",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 7,
+                    "title": "Php - array",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 8,
+                    "title": "Php - assoc array",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 9,
+                    "title": "Php - loops",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 10,
+                    "title": "Prva vežba",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 11,
+                    "title": "Php - foreach",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 12,
+                    "title": "Php - if statement",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 13,
+                    "title": "Logički operatori",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 14,
+                    "title": "Include - Require",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 15,
+                    "title": "Php - funkcije",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 16,
+                    "title": "Rad sa formama",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 17,
+                    "title": "Validacija forme",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 18,
+                    "title": "Validacija forme - drugi deo",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 19,
+                    "title": "Rad sa podacima",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 20,
+                    "title": "Rad sa podacima - 2",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 21,
+                    "title": "Rad sa podacima - 3",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "PHP Semestar 2",
+            "teacher": "Danilo Vešovic",
+            "image": "images/courses-img-03.jpeg",
+            "category": "Master PHP",
+            "description": "Naučimo Mysql bazu podataka i kako da je kontrolišemo putem PHP-a",
+            "lessons": [
+                {
+                    "id": 1,
+                    "title": "Uvod",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 2,
+                    "title": "Baza",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 3,
+                    "title": "SQL",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 4,
+                    "title": "Konekcija",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 5,
+                    "title": "insert",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 6,
+                    "title": "delete",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 7,
+                    "title": "Update",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 8,
+                    "title": "login_register_1",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 9,
+                    "title": "login_register_2",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 10,
+                    "title": "login_register_3",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 11,
+                    "title": "Relacije",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 12,
+                    "title": "Pretraga",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 13,
+                    "title": "Relacije",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 14,
+                    "title": "Vežba",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 15,
+                    "title": "Vežba",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 16,
+                    "title": "Vežba",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 17,
+                    "title": "Vežba",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 18,
+                    "title": "Vežba",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 19,
+                    "title": "Vežba",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 20,
+                    "title": "Vežba",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                },
+                {
+                    "id": 21,
+                    "title": "Vežba",
+                    "link": "https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj",
+                    "available": false
+                }
+            ]
+        }
+    ]
+}

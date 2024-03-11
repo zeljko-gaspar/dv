@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"/>
+
+<title>JS - Završni projekat</title>
+
+<link href="images/fav.png" rel="shortcut icon" />
+
+<!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- fancybox -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+<!-- custom -->
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header class="sticky-top">
+      	<div class="container">
+			<nav class="navbar navbar-expand-xl">
+				<div class="container-fluid">
+					<a class="navbar-brand link" href="home"><img src="images/logo.png" alt="Danilo Vešović" class="img-fluid" /></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item">
+								<a id="home-btn" class="nav-link link" href="home">Početna</a>
+							</li>
+							<li class="nav-item">
+								<a id="home-courses-btn" class="nav-link link" href="courses">Kursevi</a>
+							</li>
+							<li class="nav-item">
+								<a id="my-courses-btn" class="nav-link link" href="my-courses">Moji kursevi</a>
+							</li>
+							<li class="nav-item">
+								<a id="all-accounts-btn" class="nav-link link" href="accounts">Korisnici</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:;" data-bs-target="#myAccountModal" data-bs-toggle="modal">Moji nalog</a>
+							</li>
+							<li id="" class="nav-item">
+								<a class="nav-link" href="javascript:;" data-bs-target="#registerModal" data-bs-toggle="modal">Registruj se</a>
+							</li>
+							<li id="" class="nav-item">
+								<!-- otkri kada prebacis iz console u dom -->
+								<!-- <a class="nav-link" href="javascript:;" data-bs-target="#loginModal" data-bs-toggle="modal">Login/Logout</a> -->
+								<a class="nav-link" href="javascript:;" id="loginModal">Login/Logout</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+    </header>
+
+    <main id="home" class="view">
+      	<section class="hero-section">
+			<div class="img-holder">
+				<div class="bg-mask"></div>
+				<img src="images/hero-home-img.jpg" alt="Danilo Vešović" class="img-fluid" />
+			</div>
+			<div class="txt-holder">
+				<h3><span>upis</span> polaznika u toku</h3>
+				<h1>Live kursevi i <span>FullStack</span> Obuka</h1>
+				<p>HTML | CSS | JS | React | Node | MongoDB | React Native</p>
+				<div class="btn-holder">
+					<a id="courses-btn" class="btn second-bg-color link" href="courses">Saznaj više</a>
+				</div>
+			</div>
+      	</section>
+      	<section class="main-section features-section py-100">
+			<div class="container">
+				<div class="row">
+					<div class="col-4 features-item main-bg-color">
+						<a id="junior-btn" href="junior" class="wrap link">
+							<div class="txt-content">
+								<h4 class="title"><span>Junior member</span></h4>
+								<p class="price">30€</p>
+								<p>Aktiviraj sve kurseve <span>mesec dana</span></p>
+								<div class="btn-holder">
+									<span class="btn second-bg-color">Vidi više</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-4 features-item second-bg-color">
+						<a id="medior-btn" href="medior" class="wrap link">
+							<div class="txt-content">
+								<h4 class="title"><span>Medior member</span></h4>
+								<p class="price">50€</p>
+								<p>Aktiviraj sve kurseve <span>6 meseci</span></p>
+								<div class="btn-holder">
+									<span class="btn main-bg-color">Vidi više</span>
+								</div>
+							</div>
+						</a>
+					</div>
+            		<div class="col-4 features-item third-bg-color">
+						<a id="senior-btn" href="senior" class="wrap link">
+							<div class="txt-content">
+								<h4 class="title"><span>Senior member</span></h4>
+								<p class="price">80€</p>
+								<p>Aktiviraj sve kurseve <span>12 meseci</span></p>
+								<div class="btn-holder">
+									<span class="btn second-bg-color">Vidi više</span>
+								</div>
+							</div>
+						</a>
+            		</div>
+          		</div>
+        	</div>
+      	</section>
+    </main>
+
+	<main id="junior" class="view">
+		<section class="hero-section">
+			<div class="img-holder">
+				<div class="bg-mask"></div>
+				<img src="images/hero-junior-img.jpg" alt="Danilo Vešović" class="img-fluid" />
+			</div>
+			<div class="txt-holder">
+				<h1><span>Junior</span>member</h1>
+				<p>HTML | CSS | JS | React | Node | MongoDB | React Native</p>
+			</div>
+		</section>
+		<section class="main-section features-section py-100">
+			<div class="container">
+				<div class="row">
+					<div class="features-item main-bg-color black-color">
+						<div class="features-details py-100">							
+							<div class="features-content">
+								<div class="price fs-80 mb-30"><span>30€</span></div>
+								<div class="features-content-wrapper mb-50">
+									<h3>Sadržaj paketa</h3>
+									<p>Ova pretplata aktivira <strong>svaki kurs</strong> na 6 meseci.</p>
+									<p>Dok traje pretplata <strong>novi kurs</strong> koji izadje će takodje biti aktiviran.</p>
+								</div>
+								<div class="features-details mb-50">
+									<h4>Dodatno</h4>
+									<p>Paket će biti dopunjen sa nastavcima iz svake oblasti.</p>
+									<p>Kursevi su jasno podeljeni po semestrima radi lakseg učenja</p>
+								</div>
+								<div class="features-details mb-50">
+									<h4>Znanje potrebno za upis:</h4>
+									<p>Osnovno poznavanje računara.</p>
+								</div>
+								<div class="btn-holder">
+									<a href="home" class="btn btn-outline-light link" >Nazad</a>
+									<button id="buyJunior" class="btn second-bg-color">Kupi</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<main id="medior" class="view">
+		<section class="hero-section">
+			<div class="img-holder">
+				<div class="bg-mask"></div>
+				<img src="images/hero-medior-img.jpg" alt="Danilo Vešović" class="img-fluid" />
+			</div>
+			<div class="txt-holder">
+				<h1><span>Medior</span>member</h1>
+				<p>HTML | CSS | JS | React | Node | MongoDB | React Native</p>
+			</div>
+		</section>
+		<section class="main-section features-section py-100">
+			<div class="container">
+				<div class="row">
+					<div class="features-item second-bg-color black-color">
+						<div class="features-details py-100">							
+							<div class="features-content">
+								<div class="price fs-80 mb-30"><span>50€</span></div>
+								<div class="features-content-wrapper mb-50">
+									<h3>Sadržaj paketa</h3>
+									<p>Ova pretplata aktivira <strong>svaki kurs</strong> na 6 meseci.</p>
+									<p>Dok traje pretplata <strong>novi kurs</strong> koji izadje će takodje biti aktiviran.</p>
+								</div>
+								<div class="features-details mb-50">
+									<h4>Dodatno</h4>
+									<p>Paket će biti dopunjen sa nastavcima iz svake oblasti.</p>
+									<p>Kursevi su jasno podeljeni po semestrima radi lakseg učenja</p>
+								</div>
+								<div class="features-details mb-50">
+									<h4>Znanje potrebno za upis:</h4>
+									<p>Osnovno poznavanje računara.</p>
+								</div>
+								<div class="btn-holder">
+									<a href="home" class="btn btn-outline-light link">Nazad</a>
+									<button id="buyMedior" class="btn main-bg-color">Kupi</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<main id="senior" class="view">
+		<section class="hero-section">
+			<div class="img-holder">
+				<div class="bg-mask"></div>
+				<img src="images/hero-senior-img.jpg" alt="Danilo Vešović" class="img-fluid" />
+			</div>
+			<div class="txt-holder">
+				<h1><span>Senior</span>member</h1>
+				<p>HTML | CSS | JS | React | Node | MongoDB | React Native</p>
+			</div>
+		</section>
+		<section class="main-section features-section py-100">
+			<div class="container">
+				<div class="row">
+					<div class="features-item third-bg-color black-color">
+						<div class="features-details py-100">							
+							<div class="features-content">
+								<div class="price fs-80 mb-30"><span>80€</span></div>
+								<div class="features-content-wrapper mb-50">
+									<h3>Sadržaj paketa</h3>
+									<p>Godišnja pretplata aktivira <strong>svaki kurs</strong> na sajtu godinu dana.</p>
+									<p>Dok traje pretplata <strong>novi kurs</strong> koji izadje će takodje biti aktiviran.</p>
+									<p>Svaka sledeća godina pretplate će ti biti dostupna za <strong>-50%</strong> od cene.</p>
+								</div>
+								<div class="features-details mb-50">
+									<h4>Dodatno</h4>
+									<p>Paket će biti dopunjen sa nastavcima iz svake oblasti.</p>
+									<p>Kursevi su jasno podeljeni po semestrima radi lakseg učenja</p>
+								</div>
+								<div class="features-details mb-50">
+									<h4>Znanje potrebno za upis:</h4>
+									<p>Osnovno poznavanje računara.</p>
+								</div>
+								<div class="btn-holder">
+									<a href="home" class="btn btn-outline-light link">Nazad</a>
+									<button id="buySenior" class="btn second-bg-color">Kupi</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<main id="courses" class="view">
+		<section class="hero-section">
+			<div class="img-holder">
+				<div class="bg-mask"></div>
+				<img src="images/hero-courses-img.jpg" alt="Danilo Vešović" class="img-fluid" />
+			</div>
+			<div class="txt-holder">
+				<h1><span>Kursevi</span></h1>
+				<p>HTML | CSS | JS | React | Node | MongoDB | React Native</p>
+				<!-- <div class="search-container mb-4">
+					<form class="d-flex" action="javascript:;">
+						<input id="main-search" class="form-control main-search mb-0 me-2" type="search" placeholder="Ukucaj naziv kursa..."/>
+						<button id="course-search-btn" class="btn btn-outline-light" type="submit">Pretraži</button>
+					</form>
+				</div> -->
+			</div>
+      	</section>
+		<section id="group-page" class="main-section py-100">
+			<div class="container">
+				<div class="row card-container"></div>
+			</div>
+		</section>
+	</main>
+    
+    <main id="my-courses" class="view">
+      	<section class="hero-section">
+			<div class="img-holder">
+				<div class="bg-mask"></div>
+				<img src="images/hero-my-courses-img.jpg" alt="Danilo Vešović" class="img-fluid" />
+			</div>
+			<div class="txt-holder">
+				<h1><span>Moji</span>kursevi</h1>
+				<p>732 Lekcija | 111:27:14h</p>
+			</div>
+      	</section>
+      	<section class="main-section courses-section py-100">
+        	<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="courses-container">
+							<div class="accordion" id="accordionCourses">
+								<div class="accordion-item">
+									<div class="heading-holder" id="heading0">
+										<h5 data-bs-toggle="collapse" data-bs-target="#collapse0" aria-expanded="true" aria-controls="collapse0">JavaScript vežbe 1</h5>
+									</div>
+									<div id="collapse0" class="txt-holder collapse show" aria-labelledby="heading0" data-parent="#accordionCourses">
+										<div class="cours-body">
+											<div class="courses-content">
+												<h5>20 js mini vezbi</h5>
+												<div class="courses-list">
+													<h4>Lekcije</h4>
+													<ul>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Uvod</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Background slider</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Expanding Cards</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Stopwatch</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Autotext</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">KeyCode</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Text counter</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Choose tabs</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Image feed</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Quiz app</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Switcher</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">DragAndDrop</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Search widget</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Carousel</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">FAQ</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Verify account</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Social counter</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Scroll animation</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Sticky navbar</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Name number</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">NewYear counter</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Video galerija</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Mobil Tab</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Notes</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Image protection</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Rent-A-Car</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<div class="heading-holder" id="heading1">
+										<h5 class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">PHP - Semestar 1</h5>
+									</div>
+									<div id="collapse1" class="txt-holder collapse" aria-labelledby="heading1" data-parent="#accordionExample">
+										<div class="courses-body">
+											<div class="courses-content">
+												<h5>Početak backend programiranja - osnove PHP jezika.</h5>
+												<div class="courses-list">
+													<h4>Lekcije</h4>
+													<ul>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Uvod u PHP</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Instalacija php-a</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">PHP - tagovi</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">php - varijable</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Php - string</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Prosti tipovi podataka</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Php - array</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Php - assoc array</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Php - loops</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Prva vežba</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Php - foreach</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Php - if statement</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Logički operatori</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Include - Require</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Php - funkcije</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Rad sa formama</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Validacija forme</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Validacija forme - drugi deo</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Rad sa podacima</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Rad sa podacima - 2</a>
+														</li>
+														<li>
+															<a data-fancybox href="https://www.youtube.com/embed/TIwC6q1227A?si=M7MVp_vzjZdlZjEj">Rad sa podacima - 3</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+       		</div>
+      	</section>  
+    </main>
+
+	<main id="accounts" class="view">
+		<section class="hero-section">
+			<div class="img-holder">
+				<div class="bg-mask"></div>
+				<img src="images/hero-all-accounts-img.jpg" alt="Danilo Vešović" class="img-fluid" />
+			</div>
+			<div class="txt-holder">
+				<h1><span>Administriranje</span>korisnika</h1>
+				<div class="search-container mb-4">
+					<form class="d-flex" action="javascript:;">
+						<input id="account-search" class="form-control main-search mb-0 me-2" type="search" placeholder="Pretraži korisnika..."/>
+						<button id="account-search-btn" class="btn btn-outline-light" type="submit">Pretraži</button>
+					</form>
+				</div>
+			</div>
+      	</section>
+	  	<div class="main-section container py-100 table-container">
+			<div class="row">
+				<div class="col-10 offset-1">
+					<div class="table-holder">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>Ime</th>
+									<th>Prezime</th>
+									<th>Email</th>
+									<th>Paket</th>
+									<th>Tip naloga</th>
+									<th>Opcije</th>
+								</tr>
+							</thead>
+							<tbody></tbody>
+						</table>
+					</div>
+					<div class="btn-holder"><a href="add-account" id="add-account-btn" class="btn btn-warning link">Dodaj korisnika</a></div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<main id="add-account" class="view">
+		<section class="hero-section">
+			<div class="img-holder">
+				<div class="bg-mask"></div>
+				<img src="images/hero-add-account-img.jpg" alt="Danilo Vešović" class="img-fluid" />
+			</div>
+			<div class="txt-holder">
+				<h1><span>Dodavanje</span>korisnika</h1>
+			</div>
+		</section>
+		<div class="main-section container py-100 table-container">
+			<div class="row">
+				<div class="col-10 offset-1">
+					<input type="text" class="form-control" name="id" placeholder="ID">
+					<input type="text" class="form-control" name="name" placeholder="Ime">
+					<input type="text" class="form-control" name="lastName" placeholder="Prezime">
+					<input type="text" class="form-control" name="email" placeholder="Email">
+					<input type="text" class="form-control" name="member" placeholder="Paket">
+					<input type="text" class="form-control" name="role" placeholder="Tip naloga">
+					<button id="save-btn" type="submit" class="btn btn-primary">Snimi</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<main id="edit-account" class="view">
+		<section class="hero-section">
+			<div class="img-holder">
+				<div class="bg-mask"></div>
+				<img src="images/hero-edit-account-img.jpg" alt="Danilo Vešović" class="img-fluid" />
+			</div>
+			<div class="txt-holder">
+				<h1><span>Izmena</span>korisnika</h1>
+			</div>
+		</section>
+		<div class="main-section container py-100 table-container">
+			<div class="row">
+				<div class="col-10 offset-1">
+					<input type="text" class="form-control" name="eId" placeholder="id">
+					<input type="text" class="form-control" name="eName" placeholder="Ime">
+					<input type="text" class="form-control" name="eLastName" placeholder="Prezime">
+					<input type="text" class="form-control" name="eEmail" placeholder="Email">
+					<input type="text" class="form-control" name="eMember" placeholder="Paket">
+					<input type="text" class="form-control" name="eRole" placeholder="Tip naloga">
+					<button id="update-btn" type="submit" class="btn btn-warning">Snimi</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+    <footer>
+      <div class="container">
+          <div class="text-holder">
+              <div class="copyright">
+                  <p>Online škola programiranja.</p>
+              </div>
+              <div class="copyright">
+                  <p>© Copyrights 2024. - <a target="_blank" class="second-color" href="https://zeljko-gaspar.com">Željko Gašpar</a>.</p>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    <a href="#" class="back-to-top">↑</a>
+
+    <!-- modal cours detail -->
+    <div class="modal fade" id="courseModal" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modalTitle fs-5"></h2>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<img src="" alt="" class="img-fluid modalThumbnail" />
+					<p>Predavač: <span class="modalTeacher"></span></p>
+					<p>Slika: <span class="modalImage"></span></p>
+					<p>Opis: <span class="modalDescription"></span></p>
+				</div>
+				<div class="modal-footer">
+					<p>Kategorija: <span class="modalCategory"></span></p>
+				</div>
+			</div>
+		</div>
+    </div>
+    
+    <!-- modal login-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="login-header">
+						<img id="login_form_logo" src="images/logo.png" alt="logo">
+						<h2>Prijava</h2>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="login-form">
+						<form method="POST" action="javascript:;">
+							<input id="email" type="email" name="email" required="required" placeholder="E-Mail" class="form-control">
+							<input id="password" type="password" name="password" required="required" placeholder="Lozinka" class="form-control">
+							<div class="btn-holder">
+								<button class="btn second-bg-color" type="submit">Prijavi se</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="btn-holder">
+						<a href="javascript:;" class="btn btn-link" data-bs-target="#registerModal" data-bs-toggle="modal">Registruj se</a>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    
+    <!-- modal register-->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="text-center login-header">
+					<img id="login_form_logo" src="images/logo.png" alt="logo">
+					<h2 id="prijava">Registracija</h2>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="login-forma">
+						<div class="card-body register-card">
+							<form id="register_form" method="POST" action="javascript:;">
+								<div class="form-group row">
+									<label for="name" class="col-4 col-form-label">Ime</label>
+									<div class="col-md-8">
+										<input id="name" type="text" name="name" required="required" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="last_name" class="col-4 col-form-label">Prezime</label>
+									<div class="col-md-8">
+										<input id="last_name" type="text" name="last_name" required="required" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="email" class="col-4 col-form-label">Email</label>
+									<div class="col-md-8">
+										<input id="email" type="email" name="email" required="required" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="password" class="col-4 col-form-label">Lozinka</label>
+									<div class="col-md-8">
+										<input id="password" type="password" name="password" required="required" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="password-confirm" class="col-4 col-form-label">Potvrdi lozinku</label>
+									<div class="col-md-8">
+										<input id="password-confirm" type="password" name="password_confirmation" required="required" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row mb-0">
+									<div class="btn-holder">
+										<button type="submit" class="btn second-bg-color">Registruj se</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+
+	<!-- modal my account-->
+	<div class="modal fade" id="myAccountModal" tabindex="-1" aria-labelledby="myAccountModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="text-center login-header">
+					<img id="login_form_logo" src="images/logo.png" alt="logo">
+					<h2 id="prijava">Registracija</h2>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="login-forma">
+						<div class="card-body my-account-card">
+							<form id="myAccount_form" method="POST" action="javascript:;">
+								<div class="form-group row">
+									<label for="name" class="col-4 col-form-label">Ime</label>
+									<div class="col-md-8">
+										<input id="name" type="text" name="name" value="Željko" required="required" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="last_name" class="col-4 col-form-label">Prezime</label>
+									<div class="col-md-8">
+										<input id="last_name" type="text" name="last_name" value="Gašpar" required="required" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="email" class="col-4 col-form-label">Email</label>
+									<div class="col-md-8">
+										<input id="email" type="email" name="email" value="zeljko.gaspar@gmail.com" required="required" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="password" class="col-4 col-form-label">Lozinka</label>
+									<div class="col-md-8">
+										<input id="password" type="password" name="password" value="12345" required="required" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="password-confirm" class="col-4 col-form-label">Potvrdi lozinku</label>
+									<div class="col-md-8">
+										<input id="password-confirm" type="password" name="password_confirmation" required="required" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row mb-0">
+									<div class="btn-holder">
+										<button type="submit" class="btn second-bg-color">Snimi</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- alert ban user -->
+  	<div id="banUser" class="alert alert-warning" role="alert">
+		<div class="txt-holder">
+			<p>Premašili ste broj pokušaja. Pokušajte ponovo za 1 minut!</p>
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+  	</div>
+
+	<!-- alert wrong username -->
+  	<div id="usernameError" class="alert alert-warning" role="alert">
+		<div class="txt-holder">
+			<p>Pogrešno ste uneli korisničko ime!</p>
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+  	</div>
+
+	<!-- alert wrong password -->
+  	<div id="passwordError" class="alert alert-warning" role="alert">
+		<div class="txt-holder">
+			<p>Pogrešno ste uneli lozinku!</p>
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+  	</div>
+
+	<!-- alert success login -->
+	<div id="wellcomeUser" class="alert alert-warning" role="alert">
+		<div class="txt-holder">
+			<p>Dobrodošli na sajt!</p>
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+  	</div>
+
+	<!-- alert junior member purchase -->
+	<div id="purchaseAlert" class="alert alert-warning" role="alert">
+		<div class="txt-holder">
+			<p>Uspešno ste kupili member paket. Hvala na poverenju.</p>
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+  	</div>
+
+    <!-- loader -->
+    <div class="loader">
+      	<img src="images/logo.png" class="img-fluid">
+    </div>
+
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+	Fancybox.bind("[data-fancybox]");
+</script>
+<!-- <script type="module" src="js/main.js"></script> -->
+<script src="js/database.js"></script>
+<script src="js/accounts.js"></script>
+<script src="js/api.js"></script>
+<script src="js/login.js"></script>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
